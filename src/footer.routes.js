@@ -11,7 +11,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "MAPF Visualizer",
+    name: "多智能体路径寻优前端",
     route: "/",
   },
   socials: [

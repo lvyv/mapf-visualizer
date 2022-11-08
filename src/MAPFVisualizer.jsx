@@ -656,14 +656,14 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                 shadow="sm"
               >
                 <MKBox display="flex" alginItems="center" justifyContent="center" p={2}>
-                  <MKTypography variant="h4">A few things to know</MKTypography>
+                  <MKTypography variant="h4">使用须知</MKTypography>
                 </MKBox>
                 <Divider sx={{ my: 0 }} />
                 {this.populateDescription()}
                 <Divider light sx={{ my: 0 }} />
                 <MKBox display="flex" justifyContent="right" py={1} px={1.5}>
                   <MKButton onClick={() => this.setState({ isInfoDialogOpen: false })}>
-                    ok, got it
+                    好的
                   </MKButton>
                 </MKBox>
               </MKBox>
@@ -806,7 +806,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                       textAlign="center"
                     >
                       <MKTypography variant="h3" mb={1}>
-                        Algorithm
+                        算法包
                       </MKTypography>
                     </Grid>
                     <Grid container item xs={12} lg={10} sx={{ mx: "auto" }}>

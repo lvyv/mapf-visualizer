@@ -515,15 +515,13 @@ class EECBSVisualizer extends Component {
                 shadow="sm"
               >
                 <MKBox display="flex" alginItems="center" justifyContent="center" p={2}>
-                  <MKTypography variant="h4">A few things to know</MKTypography>
+                  <MKTypography variant="h4">使用须知</MKTypography>
                 </MKBox>
                 <Divider sx={{ my: 0 }} />
 
                 <MKBox px={6} py={3} textAlign="left">
                   <MKTypography variant="body2" mb={1}>
-                    1. For better display of the map, the number of rows are restricted to be no
-                    more that the number of columns. So if you want to add a map with more rows than
-                    columns, simply swap these two numbers.
+                    1. 1. 为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。
                   </MKTypography>
                   <MKTypography variant="body2" mb={1}>
                     2. The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you
@@ -676,7 +674,7 @@ class EECBSVisualizer extends Component {
                       textAlign="center"
                     >
                       <MKTypography variant="h3" mb={1}>
-                        Algorithm
+                        寻路算法包
                       </MKTypography>
                     </Grid>
                     <Grid container item xs={12} lg={10} sx={{ mx: "auto" }}>

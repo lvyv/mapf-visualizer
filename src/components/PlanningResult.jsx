@@ -49,12 +49,12 @@ export default class PlanningResult extends Component {
       >
         <MKTypography variant="h2" align="center" color={isSuccessful ? "success" : "error"}>
           {isSuccessful
-            ? "Optimal solution found!"
+            ? "找到优化的路径方案！"
             : status == -1
-            ? "Time out!"
+            ? "求解超时！"
             : isMemExceeded
-            ? "Memory exceeded"
-            : "No solution found!"}
+            ? "内存耗尽。"
+            : "未找到路径方案！"}
         </MKTypography>
         <Lottie
           options={{
@@ -96,7 +96,7 @@ export default class PlanningResult extends Component {
                       <div key={agentId}>
                         <MKTypography variant="h5" key={agentId + "f"} sx={{ color: color }}>
                           <b>
-                            <i>{"Agent " + (agentId + 1) + ": "}</i>
+                            <i>{"智能体 " + (agentId + 1) + ": "}</i>
                           </b>
                         </MKTypography>
                         <MKTypography variant="body1" key={agentId + "s"}>
@@ -118,9 +118,9 @@ export default class PlanningResult extends Component {
               fullWidth
               onChange={(_, speed) => setSpeed(speed)}
             >
-              <ToggleButton value="Slow"><b>Slow</b></ToggleButton>
-              <ToggleButton value="Medium"><b>Medium</b></ToggleButton>
-              <ToggleButton value="Fast"><b>Fast</b></ToggleButton>
+              <ToggleButton value="Slow"><b>慢速</b></ToggleButton>
+              <ToggleButton value="Medium"><b>正常</b></ToggleButton>
+              <ToggleButton value="Fast"><b>快速</b></ToggleButton>
             </ToggleButtonGroup>
             <MKButton
               variant="gradient"
@@ -133,7 +133,7 @@ export default class PlanningResult extends Component {
                 mt: 2,
               }}
             >
-              Replay
+              重新执行
             </MKButton>
           </Grid>
         ) : (
@@ -149,7 +149,7 @@ export default class PlanningResult extends Component {
             mt: 2,
           }}
         >
-          Start new
+          新路径寻优
         </MKButton>
       </Container>
     );

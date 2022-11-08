@@ -48,8 +48,8 @@ var CBSH2RTC = {
     },
   },
   description: [
-    "For better display of the map, the number of rows are restricted to be no more that the number of columns. So if you want to add a map with more rows than columns, simply swap these two numbers.",
-    "The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you choose is <b>CBSH2-RTC</b>. The available improvement techniques include: <b>High-level admissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor reasoning, Bypassing conflict, Disjoint splitting, Mutex propagation, Target reasoning, SIPP</b>.",
+    "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
+    "您当前选择的是<b>传统 MAPF</b>算法包,具体算法实现是 <b>CBSH2-RTC</b>。 可应用的优化技术包括: <b>High-level admissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor reasoning, Bypassing conflict, Disjoint splitting, Mutex propagation, Target reasoning, SIPP</b>.",
   ],
 };
 
@@ -117,7 +117,7 @@ var EECBS = {
     },
   },
   description: [
-    "For better display of the map, the number of rows are restricted to be no more that the number of columns. So if you want to add a map with more rows than columns, simply swap these two numbers.",
+    "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
     "The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you choose is <b>EECBS</b>. The available improvement techniques include:<b> High-level admissible heuristics, High-level solvers, Suboptimal solver, Inadmissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor reasoning, Bypassing conflict, Disjoint splitting, Target reasoning.</b>.",
   ],
 };
@@ -132,7 +132,7 @@ var PBS = {
     },
   },
   description: [
-    "For better display of the map, the number of rows are restricted to be no more that the number of columns. So if you want to add a map with more rows than columns, simply swap these two numbers.",
+    "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
     "The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you choose is <b>Priority-Based Search (PBS)</b>. The available improvement techniques include: <b>Safe Interval Path Planning (SIPP)</b>.",
   ],
 };
@@ -147,7 +147,7 @@ var MCCBS = {
     },
   },
   description: [
-    "For better display of the map, the number of rows are restricted to be no more that the number of columns. So if you want to add a map with more rows than columns, simply swap these two numbers.",
+    "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
     'The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you choose is <b>CBSH2-RTC</b>. The available improvement techniques include:{" "}<b>High-level admissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor reasoning, Bypassing conflict, Disjoint splitting, Mutex propagation, Target reasoning, SIPP</b>.',
   ],
 };

@@ -657,35 +657,30 @@ class LAMAPFVisualizer extends Component {
                 shadow="sm"
               >
                 <MKBox display="flex" alginItems="center" justifyContent="center" p={2}>
-                  <MKTypography variant="h4">A few things to know</MKTypography>
+                  <MKTypography variant="h4">使用须知</MKTypography>
                 </MKBox>
                 <Divider sx={{ my: 0 }} />
 
                 <MKBox px={6} py={3} textAlign="left">
                   <MKTypography variant="body2" mb={1}>
-                    1. For better display of the map, the number of rows are restricted to be no
-                    more that the number of columns. So if you want to add a map with more rows than
-                    columns, simply swap these two numbers.
+                    1. 为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。
                   </MKTypography>
                   <MKTypography variant="body2" mb={1}>
-                    2. The MAPF variant you choose is <b>Large Agent MAPF</b>, and the algorithm you
-                    choose is <b>MC-CBS</b>. The available improvement techniques include:{" "}
-                    <b>Mutex Propagation</b>.
+                    2. 当前您选择的地图类型为 <b>大智能体地图寻径算法</b>, 您选择的算法包是
+                    <b>MC-CBS</b>。 可能的优化技术是:{" "}
+                    <b>互斥传播技术（Mutex Propagation）</b>.
                   </MKTypography>
                   <MKTypography variant="body2" mb={1}>
-                    3. In <b>Large Agent MAPF</b>, we denote the location of an agent by the
-                    coordinate of its top-left grid.
+                    3. 在 <b>大智能体地图寻径算法</b>场景, 系统采用智能体左上角座标格标注该智能体。
                   </MKTypography>
                   <MKTypography variant="body2" mb={1}>
-                    4. When you use <b>Mutex Propagation</b>, please make sure all agents are no
-                    smaller than <b>2x2</b>. Agent with height or width of 1 is currently not
-                    supported.
+                    4. 当您使用 <b>互斥传播技术</b>, 请确保所有智能体的尺寸不会小于<b>2x2</b>网格。智能体长宽尺寸为1网格的情况当前暂不支持。
                   </MKTypography>
                 </MKBox>
                 <Divider light sx={{ my: 0 }} />
                 <MKBox display="flex" justifyContent="right" py={1} px={1.5}>
                   <MKButton onClick={() => this.setState({ isInfoDialogOpen: false })}>
-                    ok, got it
+                    好的
                   </MKButton>
                 </MKBox>
               </MKBox>
