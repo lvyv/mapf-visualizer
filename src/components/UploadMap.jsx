@@ -141,18 +141,18 @@ export default class UploadMap extends Component {
           textAlign="center"
         >
           <MKTypography variant="h3" mb={1}>
-            Load map
+            载入地图
           </MKTypography>
         </Grid>
         <Grid container item xs={12} lg={10} sx={{ mx: "auto" }} justifyContent="center">
           <Grid item xs={12} md={10} mb={2}>
             <MKTypography variant="body2" textAlign="center">
-              This part is optional. You can load a benchmark map or upload your own map.
-              Specification about map file format can be found{" "}
+              这部分是可选的。您可以加载基准地图或上传自己的地图。
+              地图文件格式的规范可以找到{" "}
               <a href="/guide/map" target="_blank">
-                here
+                点击
               </a>
-              .
+              。
             </MKTypography>
           </Grid>
           <Grid item xs={11} md={10} mb={1}>
@@ -162,7 +162,7 @@ export default class UploadMap extends Component {
               color="warning"
               onClick={(e) => this.openDropdown(e)}
             >
-              Choose a map<Icon>expand_more</Icon>
+              选择一个地图<Icon>expand_more</Icon>
             </MKButton>
             <Menu
               anchorEl={this.state.isDropdownOpen}

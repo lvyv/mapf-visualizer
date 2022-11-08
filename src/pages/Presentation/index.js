@@ -68,7 +68,7 @@ function Presentation() {
                 },
               })}
             >
-              Path Finding with Multiple Agents
+              多智能体路径寻优软件——前端可视化工具
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -77,7 +77,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Use this visualization tool to help understand path finding algorithms.
+              使用本工具更好理解路径寻优算法。
             </MKTypography>
           </Grid>
         </Container>

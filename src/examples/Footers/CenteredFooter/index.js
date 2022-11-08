@@ -85,7 +85,7 @@ function CenteredFooter({ company, links, socials, light }) {
         </Grid>
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <MKTypography variant="body2" color={light ? "white" : "secondary"}>
-            Copyright &copy; {year} MAPF Visualizer by{" "}
+            版权所有 &copy; {year} MAPF 可视化工具{" "}
             <MKTypography
               component={Link}
               href={href}
@@ -96,7 +96,7 @@ function CenteredFooter({ company, links, socials, light }) {
             >
               {name}
             </MKTypography>
-            {" with "} <FavoriteRoundedIcon />.
+            {"  "} <FavoriteRoundedIcon />。
           </MKTypography>
         </Grid>
       </Grid>
@@ -106,18 +106,18 @@ function CenteredFooter({ company, links, socials, light }) {
 
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
-  company: { href: "https://yutongli.me", name: "Yutong Li" },
+  company: { href: "https://www.beidouapp.com", name: "易通星云（北京）科技发展有限公司" },
   links: [
-    { href: "https://yutongli.me", name: "About me" },
-    { href: "/papers", name: "Related papers" },
-    { href: "http://mapf.info", name: "MAPF info" },
-    { href: "https://movingai.com/benchmarks/mapf/index.html", name: "Benchmarks" },
+    // { href: "https://www.beidouapp.com", name: "易通星云（北京）科技发展有限公司" },
+    // { href: "/papers", name: "Related papers" },
+    // { href: "http://mapf.info", name: "MAPF info" },
+    // { href: "https://movingai.com/benchmarks/mapf/index.html", name: "Benchmarks" },
     // { href: "https://www.creative-tim.com/license", name: "License" },
   ],
   socials: [
-    { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/stevenlyt" },
-    { icon: <LinkIcon fontSize="small" />, link: "https://yutongli.me" },
-    { icon: <LinkedInIcon fontSize="small" />, link: "https://linkedin.com/in/lyt1106" },
+    // { icon: <GitHubIcon fontSize="small" />, link: "https://github.com/stevenlyt" },
+    // { icon: <LinkIcon fontSize="small" />, link: "https://yutongli.me" },
+    // { icon: <LinkedInIcon fontSize="small" />, link: "https://linkedin.com/in/lyt1106" },
   ],
   light: false,
 };

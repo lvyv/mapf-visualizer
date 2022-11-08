@@ -52,7 +52,7 @@ function MapFormat() {
                 },
               })}
             >
-              Map file format
+              地图文件格式
             </MKTypography>
           </Grid>
         </Container>
@@ -77,13 +77,12 @@ function MapFormat() {
           <Container>
             <Grid container>
               <Grid item xs={12} md={12}>
-                <MKTypography variant="h4">Map format</MKTypography>
+                <MKTypography variant="h4">地图格式</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  For convenience, we adopt Nathan Sturtevant's MAPF map format, which is widely
-                  used by researchers in this field.
+                  为方便起见，采用 Nathan Sturtevant 的 MAPF 地图格式，该格式广泛用于本领域。
                 </MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  The map file need to start with lines:
+                  地图文件需要以如下行开始：
                 </MKTypography>
                 <MKTypography variant="body1" my={2}>
                   <code>
@@ -91,18 +90,18 @@ function MapFormat() {
                   </code>
                 </MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  where <code>x</code> is the width (number of columns) of the map, <code>y</code>{" "}
-                  is the height (number of rows) of the map.
+                  其中 <code>x</code> 是地图的宽度值 (列的数目)， <code>y</code>{" "}
+                  是地图的高度值 (行的数据) 。
                 </MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  The following lines are the map data. Each line represents a row of the map, and
-                  each character corresponds to a grid.
+                  以下几行是地图数据。每条线代表地图的一行，并且
+                  每个字符对应一个网格。
                   <br />
-                  The character <code>.</code> represents a free grid, and the character{" "}
-                  <code>@</code> represents a wall.
+                  字符 <code>.</code> 标识空白区域，而字符{" "}
+                  <code>@</code> 标识障碍区域。
                 </MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Here's an example:
+                  以下是一个示例：
                 </MKTypography>
               </Grid>
 
@@ -134,9 +133,7 @@ function MapFormat() {
                 <MKTypography variant="body1" my={2}>
                   <i>
                     <b>
-                      Note: for performance reason, please make sure the map size is not too large
-                      (smaller than 35 by 35). Support of larger maps will be added in the following
-                      version.
+                      注意：出于性能考虑，请确保地图大小不要太大。
                     </b>
                   </i>
                 </MKTypography>

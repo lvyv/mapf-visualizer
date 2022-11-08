@@ -37,7 +37,7 @@ function Counters() {
           }}
         >
           <MKTypography variant="h2" sx={{ mb: 1 }}>
-            MAPF Variants
+            MAPF算法变种
           </MKTypography>
         </Container>
       </MKBox>
@@ -46,10 +46,10 @@ function Counters() {
           <Grid item xs={12} md={4}>
             <MKBox p={2} textAlign="center" lineHeight={1}>
               <MKTypography variant="h5" mt={2} mb={1}>
-                Classic MAPF
+                传统 MAPF 算法
               </MKTypography>
               <MKTypography variant="body2" color="text">
-                Agents only occupy a single point
+                智能体只占据地图的一个网格
               </MKTypography>
               <MKButton
                 color="info"
@@ -59,7 +59,7 @@ function Counters() {
                 component="a"
                 sx={{ mt: 5 }}
               >
-                Get started
+                启动
               </MKButton>
             </MKBox>
           </Grid>
@@ -67,10 +67,10 @@ function Counters() {
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <MKBox p={2} textAlign="center" lineHeight={1}>
               <MKTypography variant="h5" mt={2} mb={1}>
-                MAPF with Large Agents
+                大尺寸智能体 MAPF 算法
               </MKTypography>
               <MKTypography variant="body2" color="text">
-                Agents may have a two-dimensional height and width
+                智能体占据地图的多个网格
               </MKTypography>
               <MKButton
                 color="info"
@@ -80,7 +80,7 @@ function Counters() {
                 component="a"
                 sx={{ mt: 5 }}
               >
-                Get started
+                启动
               </MKButton>
             </MKBox>
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
@@ -88,10 +88,10 @@ function Counters() {
           <Grid item xs={12} md={4}>
             <MKBox p={2} textAlign="center" lineHeight={1}>
               <MKTypography variant="h5" mt={2} mb={1}>
-                Robust MAPF
+                智能体动态 MAPF 算法
               </MKTypography>
               <MKTypography variant="body2" color="text">
-                Agents may have an action delay
+                智能体可能会随机耽误或收到外部干扰
               </MKTypography>
               <MKButton
                 color="secondary"
@@ -104,7 +104,7 @@ function Counters() {
                   pointerEvents: "none",
                 }}
               >
-                Coming soon
+                研制中...
               </MKButton>
             </MKBox>
           </Grid>

@@ -57,7 +57,7 @@ function Guide() {
               Make your own visualizer
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-             <i>Guide on how to migrate this project to your own algorithm</i>
+             <i>如何添加新的路径规划算法包</i>
             </MKTypography>
           </Grid>
         </Container>

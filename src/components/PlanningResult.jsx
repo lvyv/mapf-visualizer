@@ -78,10 +78,10 @@ export default class PlanningResult extends Component {
         ) : (
           <div>
             <MKTypography variant="h5">
-              <b>{"Algorithm: " + algorithm} </b>
+              <b>{"算法包: " + algorithm} </b>
             </MKTypography>
             <MKTypography variant="h5">
-              <b>{"Execution time: " + planningTime + " s"}</b>
+              <b>{"执行时间: " + planningTime + " 秒"}</b>
             </MKTypography>
             <div>
               {isSuccessful

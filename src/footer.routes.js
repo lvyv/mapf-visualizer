@@ -15,56 +15,49 @@ export default {
     route: "/",
   },
   socials: [
-    {
-      icon: <GitHubIcon />,
-      link: "https://github.com/stevenlyt",
-    },
-    {
-      icon: <LinkIcon />,
-      link: "https://yutongli.me",
-    },
-    {
-      icon: <LinkedInIcon />,
-      link: "https://linkedin.com/in/lyt1106",
-    },
+    // {
+    //   icon: <GitHubIcon />,
+    //   link: "https://github.com/stevenlyt",
+    // },
+    // {
+    //   icon: <LinkIcon />,
+    //   link: "https://yutongli.me",
+    // },
+    // {
+    //   icon: <LinkedInIcon />,
+    //   link: "https://linkedin.com/in/lyt1106",
+    // },
   ],
   menus: [
     {
-      name: "Author",
+      name: "资源",
       items: [
-        { name: "about me", href: "https://yutongli.me" },
-        { name: "contact", href: "mailto:yli81711@usc.edu" },
+        { name: "多智能体路径寻优文献", href: "http://mapf.info" },
+        { name: "基准测试集", href: "https://movingai.com/benchmarks/mapf/index.html" },
       ],
     },
     {
-      name: "resources",
+      name: "第三方库",
       items: [
-        { name: "MAPF information", href: "http://mapf.info" },
-        { name: "Benchmarks", href: "https://movingai.com/benchmarks/mapf/index.html" },
-      ],
-    },
-    {
-      name: "Powered by",
-      items: [
-        { name: "Material Kit 2", href: "https://demos.creative-tim.com/material-kit-pro-react" },
-        { name: "MUI", href: "https://mui.com" },
+        { name: "界面素材包", href: "https://demos.creative-tim.com/material-kit-pro-react" },
+        { name: "UI控件", href: "https://mui.com" },
       ],
     },
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} by{" "}
+      版权所有 &copy; {date} by{" "}
       <MKTypography
         component="a"
-        href="https://yutongli.me"
+        href="https://www.beidouapp.com"
         target="_blank"
         rel="noreferrer"
         variant="button"
         fontWeight="regular"
       >
-        Yutong Li
+        易通星云
       </MKTypography>
-      {" with "} <FavoriteRoundedIcon />.
+      {"  "} <FavoriteRoundedIcon />。
     </MKTypography>
   ),
 };

@@ -835,7 +835,7 @@ class LAMAPFVisualizer extends Component {
                             fullWidth
                             color="info"
                           >
-                            Choose reasoning techniques
+                            选择推理技术
                           </MKButton>
                         </Grid>
                         <Modal

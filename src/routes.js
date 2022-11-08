@@ -56,36 +56,36 @@ import { CBSH2RTC, EECBS, PBS } from "Populate";
 
 const routes = [
   {
-    name: "Visualizers",
+    name: "可视化工具",
     icon: <Icon>dashboard</Icon>,
     columns: 1,
     rowsPerColumn: 2,
     collapse: [
       {
-        name: "Classic MAPF",
+        name: "传统MAPF算法",
         collapse: [
           {
-            name: "CBSH2-RTC",
+            name: "CBSH2-RTC算法",
             route: "/classic-visualizer/CBSH2-RTC",
             component: <MAPFVisualizer key="CBSH2-RTC" populate={CBSH2RTC} />,
           },
           {
-            name: "EECBS",
+            name: "EECBS算法",
             route: "/classic-visualizer/EECBS",
             component: <MAPFVisualizer key="EECBS" populate={EECBS} />,
           },
           {
-            name: "PBS",
+            name: "PBS算法",
             route: "/classic-visualizer/PBS",
             component: <MAPFVisualizer key="PBS" populate={PBS} />,
           },
         ],
       },
       {
-        name: "Large Agent MAPF",
+        name: "大尺寸智能体MAPF算法",
         collapse: [
           {
-            name: "MC-CBS",
+            name: "MC-CBS算法",
             route: "/la-visualizer",
             component: <LAMAPFVisualizer key="MC-CBS" />,
           },
@@ -94,16 +94,7 @@ const routes = [
     ],
   },
   {
-    name: "Papers",
-    icon: <FontAwesomeIcon icon={faBookOpenReader} />,
-    columns: 1,
-    rowsPerColumn: 2,
-    route: "/papers",
-    key: "papers",
-    component: <ClassicPaper />,
-  },
-  {
-    name: "Guide",
+    name: "帮助手册",
     icon: <FontAwesomeIcon icon={faChalkboardUser} />,
     collapse: [
       // {
@@ -113,29 +104,20 @@ const routes = [
       //   component: <Guide />,
       // },
       {
-        name: "map",
-        description: "Format of map input file",
+        name: "地图",
+        description: "地图文件格式",
         route: "/guide/map",
         component: <MapFormat />,
       },
       {
-        name: "algorithms",
-        description: "Brief description of various MAPF algorithms",
+        name: "算法包",
+        description: "不同算法原理简介",
         route: "/guide/algorithms",
         component: <MAPFAlgos />,
       },
     ],
   },
-  {
-    name: "more MAPF",
-    icon: <Icon>article</Icon>,
-    href: "http://mapf.info",
-  },
-  {
-    name: "github",
-    icon: <GitHubIcon />,
-    href: "https://www.github.com/stevenlyt/mapf-visualizer",
-  },
+
 ];
 
 export default routes;

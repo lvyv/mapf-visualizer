@@ -49,7 +49,7 @@ var CBSH2RTC = {
   },
   description: [
     "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
-    "您当前选择的是<b>传统 MAPF</b>算法包,具体算法实现是 <b>CBSH2-RTC</b>。 可应用的优化技术包括: <b>High-level admissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor reasoning, Bypassing conflict, Disjoint splitting, Mutex propagation, Target reasoning, SIPP</b>.",
+    "您当前选择的是<b>传统 MAPF</b>算法包,具体算法实现是 <b>CBSH2-RTC</b>。 可应用的优化技术包括: <b>可容启发式（High-level admissible heuristics）, 冲突优先（Prioritizing conflict）, 矩形推理（Rectangle reasoning）, 通道推理（Corridor reasoning）, 冲突旁路（Bypassing conflict）, 不相交的分裂（Disjoint splitting）, 互斥传播（Mutex propagation）, 目标推理（Target reasoning）, SIPP</b>.",
   ],
 };
 
@@ -118,7 +118,7 @@ var EECBS = {
   },
   description: [
     "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
-    "The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you choose is <b>EECBS</b>. The available improvement techniques include:<b> High-level admissible heuristics, High-level solvers, Suboptimal solver, Inadmissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor reasoning, Bypassing conflict, Disjoint splitting, Target reasoning.</b>.",
+    "当前您选择的地图类型为 <b>传统 MAPF 算法包</b>，你选择使用的算法是 <b>EECBS</b>。",
   ],
 };
 
@@ -133,7 +133,7 @@ var PBS = {
   },
   description: [
     "为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。",
-    "The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you choose is <b>Priority-Based Search (PBS)</b>. The available improvement techniques include: <b>Safe Interval Path Planning (SIPP)</b>.",
+    "当前您选择的地图类型为 <b>传统 MAPF 算法包</b>，你选择使用的算法是 <b>基于优先级的搜索(PBS)</b>技术。",
   ],
 };
 

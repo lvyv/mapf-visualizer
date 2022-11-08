@@ -26,8 +26,8 @@ import MKButton from "components/MKButton";
 import UploadMap from "components/UploadMap";
 import randomColor from "randomcolor";
 
-const DEFAULTROW = 8;
-const DEFAULTCOL = 15;
+const DEFAULTROW = 20;
+const DEFAULTCOL = 30;
 
 class MAPFVisualizer extends Component {
   constructor(props) {
@@ -820,7 +820,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                             fullWidth
                             color="info"
                           >
-                            Choose reasoning techniques
+                            选择推理技术
                           </MKButton>
                         </Grid>
                         <Modal
@@ -847,7 +847,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                                 py={2}
                                 px={2}
                               >
-                                <MKTypography variant="h4">CBS improvement techniques</MKTypography>
+                                <MKTypography variant="h4">CBS 优化技术</MKTypography>
                               </MKBox>
                               <Divider dark="true" sx={{ my: 0 }} />
                               {this.populateOptions()}
@@ -878,7 +878,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                       mt={3}
                     >
                       <MKTypography variant="h3" mb={1}>
-                        Map info
+                        地图信息
                       </MKTypography>
                     </Grid>
                     <Grid container item xs={12} lg={10} sx={{ mx: "auto" }}>
@@ -888,10 +888,10 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                             fullWidth
                             required
                             id="num-row"
-                            label="Number of Rows"
+                            label="行数"
                             color="info"
                             type="number"
-                            helperText="Range between 4-30"
+                            helperText="范围 4-30"
                             onChange={(e) => this.setState({ tempRow: parseInt(e.target.value) })}
                             onBlur={(e) => this.changeMapRow(e)}
                             value={this.state.tempRow ? this.state.tempRow : ""}
@@ -902,10 +902,10 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                             required
                             fullWidth
                             id="num-col"
-                            label="Number of columns"
+                            label="列数"
                             color="info"
                             type="number"
-                            helperText="Range between 4-30"
+                            helperText="范围 4-30"
                             onChange={(e) => {
                               this.setState({ tempCol: parseInt(e.target.value) });
                             }}
@@ -930,7 +930,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                       textAlign="center"
                     >
                       <MKTypography variant="h3" mb={1}>
-                        Add agent
+                        添加智能体
                       </MKTypography>
                     </Grid>
                     <Grid
@@ -944,9 +944,9 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                     >
                       <Grid item xs={12} md={10} mb={2}>
                         <MKTypography variant="body2" textAlign="center">
-                          To add an agent, first click the add button, then click the start location
-                          followed by the goal location on the map. To remove an agent, click the
-                          remove button followed by the agent.
+                          要添加智能体，首先单击添加按钮，然后单击开始位置
+                          其次是地图上的目标位置。要删除智能体，请单击
+                          删除按钮后选择智能体。
                         </MKTypography>
                       </Grid>
                       <Grid item xs={12} md={6} mb={1}>
@@ -959,7 +959,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                             this.handleAddAgentByClick();
                           }}
                         >
-                          add agent
+                          添加智能体
                         </MKButton>
                       </Grid>
                       <Grid item xs={12} md={6} mb={1}>
@@ -972,7 +972,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                             this.removeAgent();
                           }}
                         >
-                          remove agent
+                          删除智能体
                         </MKButton>
                       </Grid>
                     </Grid>
@@ -985,7 +985,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                           onClick={(e) => this.requestSolution(e)}
                           fullWidth
                         >
-                          Plan!
+                          多智能体路径寻优!
                         </MKButton>
                       </Grid>
                     </Grid>

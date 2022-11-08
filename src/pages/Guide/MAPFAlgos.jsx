@@ -54,10 +54,10 @@ function MAPFAlgos() {
                 },
               })}
             >
-              Various MAPF Algorithms
+              MAPF 系列算法介绍
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              <i>The research papers that the visualizers are built upon</i>
+              <i>可视化工具构建于相关研究论文的基础之上</i>
             </MKTypography>
             {/* <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               create account
@@ -86,18 +86,18 @@ function MAPFAlgos() {
             <Grid container>
               <Grid item xs={12} md={12} sx={{ mb: 6 }}>
                 <MKTypography variant="h2" textAlign="center" my={4}>
-                  Single-point MAPF
+                  单网格多智能体路径寻优算法包
                 </MKTypography>
                 <MKTypography variant="h4">CBSH2-RTC</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Pairwise Symmetry Reasoning for Multi-Agent Path Finding Search. <br />
+                  多智能体路径查找搜索的成对对称推理 <br />
                   Jiaoyang Li, Daniel Harabor, Peter J. Stuckey, Hang Ma, Graeme Gange and Sven
                   Koenig. <br />
                   <em>Artificial Intelligence (AIJ), vol 301, pages 103574, 2021.</em>
                 </MKTypography>
                 <MKTypography variant="h4">EECBS</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  EECBS: Bounded-Suboptimal Search for Multi-Agent Path Finding. <br />
+                  EECBS：多智能体路径查找的有界次优搜索 <br />
                   Jiaoyang Li, Wheeler Ruml and Sven Koenig。 <br />
                   <em>
                     AAAI Conference on Artificial Intelligence (AAAI), pages 12353-12362, 2021.
@@ -105,7 +105,7 @@ function MAPFAlgos() {
                 </MKTypography>
                 <MKTypography variant="h4">High-level heuristics</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Improved Heuristics for Multi-Agent Path Finding with Conflict-Based Search.{" "}
+                  使用基于冲突搜索的改进多代理路径查找的启发式方法{" "}
                   <br />
                   Jiaoyang Li, Eli Boyarski, Ariel Felner, Hang Ma and Sven Koenig.
                   <br />
@@ -115,7 +115,7 @@ function MAPFAlgos() {
                   </em>
                 </MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Adding Heuristics to Conflict-Based Search for Multi-Agent Path Finding. <br />
+                  基于启发式方法的冲突搜索多智能体路径查找<br />
                   Ariel Felner, Jiaoyang Li, Eli Boyarski, Hang Ma, Liron Cohen, T. K. Satish Kumar
                   and Sven Koenig. <br />
                   <em>
@@ -125,7 +125,7 @@ function MAPFAlgos() {
                 </MKTypography>
                 <MKTypography variant="h4">Mutex Propagation</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Multi-Agent Path Finding with Mutex Propagation. <br />
+                  基于互斥传播的多代理路径查找<br />
                   Han Zhang, Jiaoyang Li, Pavel Surynek, Sven Koenig and T. K. Satish Kumar. <br />
                   <em>
                     International Conference on Automated Planning and Scheduling (ICAPS), pages
@@ -134,13 +134,13 @@ function MAPFAlgos() {
                 </MKTypography>
                 <MKTypography variant="h4">Rectangle symmetry</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Symmetry-Breaking Constraints for Grid-Based Multi-Agent Path Finding. <br />
+                  基于网格的多智能体对称约束消解路径查找<br />
                   Jiaoyang Li, Daniel Harabor, Peter J. Stuckey, Hang Ma and Sven Koenig. <br />
                   <em>AAAI Conference on Artificial Intelligence (AAAI), pages 6087-6095, 2019.</em>
                 </MKTypography>
                 <MKTypography variant="h4">Corridor and Target Symmetries</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  New Techniques for Pairwise Symmetry Breaking in Multi-Agent Path Finding. <br />
+                  多智能体路径查找中成对对称约束条件消解新技术<br />
                   Jiaoyang Li, Graeme Gange, Daniel Harabor, Peter J. Stuckey, Hang Ma and Sven
                   Koenig. <br />
                   <em>
@@ -150,17 +150,17 @@ function MAPFAlgos() {
                 </MKTypography>
 
                 <MKTypography variant="h2" textAlign="center" my={4}>
-                  Large Agent MAPF
+                  大尺寸多智能体路径寻优算法包
                 </MKTypography>
                 <MKTypography variant="h4">Mutex Propagation with MC-CBS</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Mutex Propagation in Multi-Agent Path Finding for Large Agents. <br />
+                  大型智能体多智能体路径查找中的互斥传播 <br />
                   Han Zhang, Yutong Li, Jiaoyang Li, T. K. Satish Kumar and Sven Koenig. <br />
                   <em> International Symposium on Combinatorial Search (SoCS), 2022. </em>
                 </MKTypography>
                 <MKTypography variant="h4">MC-CBS</MKTypography>
                 <MKTypography variant="body1" my={2}>
-                  Multi-Agent Path Finding for Large Agents. <br />
+                  大型智能体的多智能体路径查找<br />
                   Jiaoyang Li, Pavel Surynek, Ariel Felner, Hang Ma, T. K. Satish Kumar and Sven
                   Koenig. <br />
                   <em>AAAI Conference on Artificial Intelligence (AAAI), pages 7627-7634, 2019.</em>

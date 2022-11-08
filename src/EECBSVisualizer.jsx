@@ -521,23 +521,20 @@ class EECBSVisualizer extends Component {
 
                 <MKBox px={6} py={3} textAlign="left">
                   <MKTypography variant="body2" mb={1}>
-                    1. 1. 为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。
+                    1. 为优化前端显示效果，网格地图行数被限制为不超过列数。如果地图尺寸是行大于列，只需简单将地图进行行列转置。
                   </MKTypography>
                   <MKTypography variant="body2" mb={1}>
-                    2. The MAPF variant you choose is <b>classic MAPF</b>, and the algorithm you
-                    choose is <b>EECBS</b>. The available improvement techniques include:{" "}
+                    2. 当前您选择的地图类型为 <b>传统 MAPF 算法包</b>，你选择使用的算法是 <b>EECBS</b>。可用的优化技术包括：{" "}
                     <b>
-                      High-level admissible heuristics, High-level solvers, Suboptimal solver,
-                      Inadmissible heuristics, Prioritizing conflict, Rectangle reasoning, Corridor
-                      reasoning, Bypassing conflict, Disjoint splitting, Target reasoning.
+                    可应用的优化技术包括: <b> 冲突优先（Prioritizing conflict）, 矩形推理（Rectangle reasoning）, 通道推理（Corridor reasoning）, 冲突旁路（Bypassing conflict）, 不相交的分裂（Disjoint splitting）, 互斥传播（Mutex propagation）, 目标推理（Target reasoning）, SIPP</b>。"
                     </b>
-                    .
+                    
                   </MKTypography>
                 </MKBox>
                 <Divider light sx={{ my: 0 }} />
                 <MKBox display="flex" justifyContent="right" py={1} px={1.5}>
                   <MKButton onClick={() => this.setState({ isInfoDialogOpen: false })}>
-                    ok, got it
+                    好的
                   </MKButton>
                 </MKBox>
               </MKBox>
@@ -688,7 +685,7 @@ class EECBSVisualizer extends Component {
                             fullWidth
                             color="info"
                           >
-                            Choose reasoning techniques
+                            选择推理技术
                           </MKButton>
                         </Grid>
                         <Modal

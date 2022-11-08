@@ -3,31 +3,29 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-  <h1 align="center"><a href="http://mapf-visualizer.com" style="text-decoration: none;">MAPF Visualizer</a></h1>
-  <p align="center"><i>A visualization tool for multi-agent path finding algorithms.</i></p>
-  <img src='./src/assets/images/landingpage.png' />
-  <img src='./src/assets/images/map.png' />
-  <img src='./src/assets/images/map2.png' />
+  <h1 align="center"><a href="http://mapf-visualizer.com" style="text-decoration: none;">多智能体路径寻优前端</a></h1>
+  <p align="center"><i>多智能体路径寻优软件的前端可视化工具，用户可以利用它查看动态规划的路径方案。</i></p>
+
 </div>
 
-## About The Project
+## 软件说明
 
-This project provides a visualization tool for Multi-Agent Path Finding (MAPF) algorithms.
+本软件为多智能体路径寻优 (MAPF) 算法提供了一个可视化工具。
 
-There have been tons of single agent path finding visualization websites, yet they all make use of well-established algorithms such as A star and Dijkstra. However, the field of multi agent path finding is relatively new (CBS, an important MAPF algorithm, was proposed in 2012) and thus didn't gain as much public attention.
+当前存在大量的单代理寻路可视化方案，但它们都使用了成熟的算法，例如 A* 和 Dijkstra。然而，多智能体寻路领域相对较新（CBS，一种重要的 MAPF 算法，于 2012 年提出），因此还没有大量应用到商业产品方案中。
 
-This website aims at helping people better understand MAPF by offering a real-time visualization tool. Usually running a MAPF solver involves the following steps:
+本软件旨在通过提供实时可视化工具帮助人们更好地了解 MAPF。通常运行 MAPF 求解器涉及以下步骤：
 
-1. compile the C++ code into executables
-2. put the map and instance into two separate files with contents formatted in terms of certain rules
-3. run the executable with a complicated command
+1. 将C++代码编译成可执行文件
+2. 将地图和实例放到两个单独的文件中，内容按照一定的规则进行格式化
+3. 用复杂的命令运行可执行文件
 
-This website offers a much more intuitive experience. Users will be able to:
+本软件提供了更直观的体验。用户将能够：
 
-1. select a particular algorithm they are interested in
-2. design their own map by dragging their mouse to add walls
-3. adding agents by entering their start and goal location
-4. press the `plan` button and get the animated planning result instantly
+1. 选择他们感兴趣的特定算法
+2. 通过拖动鼠标添加墙壁来设计自己的地图
+3. 通过输入他们的开始和目标位置来添加代理
+4. 点击 `路径寻优规划` 按钮来动态获取路径规划的结果
 
 ### Currently supported MAPF variants and algorithms
 
