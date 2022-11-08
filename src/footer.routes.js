@@ -57,7 +57,7 @@ export default {
       >
         易通星云
       </MKTypography>
-      {"  "} <FavoriteRoundedIcon />。
+      {"  "} 
     </MKTypography>
   ),
 };

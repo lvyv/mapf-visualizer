@@ -96,7 +96,7 @@ function CenteredFooter({ company, links, socials, light }) {
             >
               {name}
             </MKTypography>
-            {"  "} <FavoriteRoundedIcon />。
+            {"  "} 
           </MKTypography>
         </Grid>
       </Grid>

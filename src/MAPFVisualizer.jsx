@@ -859,7 +859,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                                     this.setState({ isAlgDialogOpen: false });
                                   }}
                                 >
-                                  set
+                                  设置
                                 </MKButton>
                               </MKBox>
                             </MKBox>
