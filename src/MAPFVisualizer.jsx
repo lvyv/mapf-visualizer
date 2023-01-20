@@ -26,8 +26,8 @@ import MKButton from "components/MKButton";
 import UploadMap from "components/UploadMap";
 import randomColor from "randomcolor";
 
-const DEFAULTROW = 20;
-const DEFAULTCOL = 30;
+const DEFAULTROW = 60;
+const DEFAULTCOL = 80;
 
 class MAPFVisualizer extends Component {
   constructor(props) {
@@ -251,7 +251,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
 
   changeMapRow(e) {
     let t = parseInt(e.target.value);
-    t = t > 30 ? 30 : t < 4 ? 4 : t;
+    t = t > 60 ? 60 : t < 4 ? 4 : t;
     t = Math.min(t, this.state.numCol);
     this.setState({ tempRow: t });
     this.adjustMap(t, this.state.numCol, this.createEmptyMap(t, this.state.numCol));
@@ -259,7 +259,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
 
   changeMapCol(e) {
     let t = parseInt(e.target.value);
-    t = t > 30 ? 30 : t < 4 ? 4 : t;
+    t = t > 80 ? 80 : t < 4 ? 4 : t;
     t = Math.max(t, this.state.numRow);
     this.setState({ tempCol: t });
     this.adjustMap(this.state.numRow, t, this.createEmptyMap(this.state.numRow, t));
@@ -712,7 +712,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
             item
             container
             xs={12}
-            md={8}
+            md={10}
             direction="row"
             justifyContent="center"
             alignItems="center"
@@ -768,7 +768,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
             item
             container
             xs={12}
-            md={4}
+            md={2}
             style={{
               display: "inline-block",
             }}
@@ -888,7 +888,7 @@ fetch("http://52.53.223.36:8080/"+ this.state.name, req)
                             fullWidth
                             required
                             id="num-row"
-                            label="行数"
+                            label="行-数"
                             color="info"
                             type="number"
                             helperText="范围 4-30"

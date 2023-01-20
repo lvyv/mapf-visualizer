@@ -68,7 +68,7 @@ function Presentation() {
                 },
               })}
             >
-              多智能体路径寻优软件——前端可视化工具
+              多智能体路径寻优——前端可视化工具
             </MKTypography>
             <MKTypography
               variant="body1"
